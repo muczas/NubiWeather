@@ -13,7 +13,7 @@ You should expose at least 2 endpoints:
 1. `/realtime-weather` - should return current weather in Gliwice and Hamburg
 2. `/forecast-weather` - should return forecast for next days in Gliwice and Hamburg
    
-Those are basic requirements, but feel free to add more features if you like.
+Those are basic requirements, but feel free to add more features if you like, however don't spend too much time on it - max 8 hours.
 
 ## Guidelines for backend:
 
@@ -22,6 +22,7 @@ Those are basic requirements, but feel free to add more features if you like.
 3. Usage of best practices (we want to see how you structure your code)
 4. Usage of version control system (git)
 5. Usage of provided API (we want to see how you use it)
-6. Saving data in a database or in runtime (we want to see how you handle data)
-8. Instructions on how to run the application (we want to see your application in action)
+6. Saving data in runtime or `optionally` in preferred database (we want to see how you handle data)
+7. Instructions on how to run the application (we want to see your application in action)
+8. Readme with basic information about the application and features you've implemented
 + 9. Bonus points for testing
