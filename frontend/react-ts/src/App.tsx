@@ -1,20 +1,25 @@
-import nubisoftLogo from "./assets/nubisoft.svg";
+import React from "react";
+import Setting from "./sites/Setting";
+import Nav from "./Nav";
+import Front from "./sites/Front";
+import Weather from "./sites/Weather";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LikeCity from "./sites/LikeCity";
+import WeatherDetail from "./sites/WeatherDetail";
 
 function App() {
-  return (
-    <div className="flex justify-center flex-col gap-4 items-center">
-      <div>
-        <a href="https://nubisoft.io/" target="_blank">
-          <img src={nubisoftLogo} className="" alt="Nubisoft logo" />
-        </a>
-      </div>
-      <h1>NubiWeather</h1>
-      <section>
-        <h2>Here's your starting point.</h2>
-        <h3>Good luck! :)</h3>
-      </section>
-    </div>
-  );
-}
 
+
+  return (<Router>
+    <Nav />
+    <Routes>
+      <Route path="/" element={<Front/>} />
+      <Route path="/weather" element={<Weather/>} />
+      <Route path="/favorites" element={<LikeCity/>} />
+      <Route path="/settings" element={<Setting/>} />
+      <Route path="/weather/:city/Detail" element={<WeatherDetail/>}/>
+    </Routes>
+  </Router>
+
+);}
 export default App;
