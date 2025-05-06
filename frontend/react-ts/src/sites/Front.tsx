@@ -1,5 +1,5 @@
 import React from "react";
-import nubisoftLogo from "C:/Users/Kuba Sornek/Desktop/NUBISOF/nubiweather-recruitment/frontend/react-ts/src/assets/nubisoft.svg";
+import nubisoftLogo from '../assets/nubisoft.svg';
 const Front = () => {
   return (
     <div
@@ -20,8 +20,8 @@ const Front = () => {
       {/* Text Section */}
       <section className="text-center p-4 bg-white/80 rounded-xl shadow-lg">
         <h2 className="text-black text-2xl font-semibold">
-          Rain or shine, day or night, <br />
-          NubiWeather keeps your forecast bright!
+        Bez względu na deszcz czy słońce, <br/>
+        dzień czy noc — NubiWeather zawsze rozjaśni Twoją prognozę!
         </h2>
       </section>
     </div>

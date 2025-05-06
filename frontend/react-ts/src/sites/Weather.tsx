@@ -5,7 +5,7 @@ import WeatherImages, { WeatherCodeMap } from "./BackGround/WeatherImages";
 
 const API_KEY = "817b7fcd23804ddeb36154923250204";
 const API_URL = "https://api.weatherapi.com/v1/current.json";
-
+// zabezpieczenie błedu 
 function sanitizeCityName(city: string): string {
   const polishMap: Record<string, string> = {
     ą: "a", ć: "c", ę: "e", ł: "l", ń: "n", ó: "o", ś: "s", ź: "z", ż: "z",
@@ -42,7 +42,6 @@ export default function Weather() {
       });
     }
 
-    // Sync theme with local storage
     const theme = localStorage.getItem("theme");
     setDarkMode(theme === "dark");
   }, []);

@@ -9,7 +9,7 @@ const WeatherImages: Record<string, string> = {
 };
 
 export default WeatherImages;
-
+// przypisanie obrazów na podstawie kodu z wheatherapi
 export const WeatherCodeMap: Record<number, keyof typeof WeatherImages> = {
   1000: "Clear",
   1003: "PartlyCloudy",

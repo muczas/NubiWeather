@@ -26,7 +26,7 @@ const WeatherDetail = () => {
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
-
+// Zabezpieczenie błedu
   const normalizeCityName = (city: string | undefined): string => {
     if (!city) return "";
     const diacriticsMap: { [key: string]: string } = {
